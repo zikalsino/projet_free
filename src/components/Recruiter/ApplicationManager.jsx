@@ -76,7 +76,7 @@ const ApplicationManager = () => {
       const response = await axios.patch(`http://localhost:8080/api/applications/status/${applicationId}`, null, {
         params: { status },
       });
-      setSuccess("Statut de la candidature mis à jour avec succès !");
+      setSuccess("Statut du candidat mis à jour avec succès !");
       console.log(response.data);
     } catch (err) {
       setError("Erreur lors de la mise à jour du statut de la candidature.");
